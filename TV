@@ -1,0 +1,315 @@
+
+#################综艺##################
+#奔跑吧兄弟第13季
+Keep Running 2025 S09 => 奔跑吧！兄弟.S13
+Keep.Running.2025.S09E01.Part1(?=.*QHstudIo)  => Keep.Running.2025.S13E01
+Keep.Running.2025.S09E01.Part2(?=.*QHstudIo)  => Keep.Running.2025.S13E02
+Keep.Running.2025.S09(?=.*QHstudIo)  => Keep.Running.2025.S13 && S13E <> .2160 >> EP+1
+
+#再见爱人
+再见爱人 => 再见爱人{[tmdbid=130099;type=tv]}
+#综艺上下集【PTerWEB|TJUPT】
+2021.E <> .PP{  
+2021.E <> .Part2(?=.*PTerWEB) >> 2*EP+
+2021.E <> .Part3(?=.*PTerWEB) >> 2*EP+1
+S[0-9]+E <> .Part1(?=.*PTerWEB) >> 2*EP-1
+ 
+S[0-9]+E <> .Part2(?=.*PTerWEB) >> 2*EP
+S[0-9]+E <> .PartA(?=.*TJUPT) >> 2*EP-1
+S[0-9]+E <> .PartB(?=.*TJUPT) >> 2*EP
+#韩国综艺：激赞网红
+The.Influencer => 激赞网红
+#韩国综艺：Running man
+Running.man => Running man{[tmdbid=33238;type=tv]}
+Runningman => Running man{[tmdbid=33238;type=tv]}
+#歌手2024-HHWEB
+Singer.S09.2013(?=.*HHWEB) => 歌手2024.S09{[tmdbid=107467;type=tv;s=9]}
+#歌手2024
+Singer.*(S09|S05) => 歌手2024.S01
+#奔跑吧！兄弟
+Keep.Running.S08 => 奔跑吧！兄弟.S12
+Keep.Running.S09 => 奔跑吧！兄弟.S13
+# 歌手
+我是歌手\.I => \.I
+#现在就出发 adweb
+Natural.High.S01E <> .Part1(?=.*ADWeb) >> 2*EP-1
+Natural.High.S01E <> .Part2(?=.*ADWeb) >> 2*EP
+Natural.High.S01E <> .Plus(?=.*ADWeb) >> EP+20               
+ 
+#声生不息S04大湾区季
+Infinity.and.Beyond.2024.S04E01.Part1.2160p(?=.*QHstudIo) => Infinity.and.Beyond.2024.S04E01.2160P
+Infinity.and.Beyond.2024.S04E01.Part2.2160p(?=.*QHstudIo) => Infinity.and.Beyond.2024.S04E02.2160P
+Infinity.and.Beyond.2024.S04E <> .2160p(?=.*QHstudIo) >> EP+1
+.First.Look.2160p.(?=.*QHstudIo) => .Part2.First.Look.2160P
+.Extra.2160p.(?=.*QHstudIo) => .Part2.Extra.2160P
+.Extra.Version.2160p.(?=.*QHstudIo) => .Part4.Extra.Version.2160P
+ 
+#快乐再出发1 HDCTV
+(?i)Go.for.Happiness.2022(?=.*Extra.Version)(?=.*HDCTV) => Go.for.Happiness.2022.S00 && S00 <> (?=.*Extra.Version) >> EP+1
+(?i)Go.for.Happiness.2022(?=.*SP)(?=.*HDCTV) => Go.for.Happiness.2022.S00E06
+(?i)Go.for.Happiness.2022.E00(?=.*HDCTV) => Go.for.Happiness.2022.S00E01
+#快乐再出发2 HHWEB
+(?i)Go.for.Happiness.S02(?=.*Plus.Part1)(?=.*HHWEB) => Go.for.Happiness.S00 && S00 <> (?i)(?=.*Plus) >> EP+7
+(?i)Go.for.Happiness.S02(?=.*Plus.Part2)(?=.*HHWEB) => Go.for.Happiness.S00 && S00 <> (?i)(?=.*Plus) >> EP+8
+(?i)Go.for.Happiness.S02(?=.*Plus.Part3)(?=.*HHWEB) => Go.for.Happiness.S00 && S00 <> (?i)(?=.*Plus) >> EP+9
+(?i)Go.for.Happiness.S02(?=.*Plus.Part4)(?=.*HHWEB) => Go.for.Happiness.S00 && S00 <> (?i)(?=.*Plus) >> EP+10
+(?i)Go.for.Happiness.S02(?=.*Plus)(?<!Part)(?=.*HHWEB) => Go.for.Happiness.S00 && S00 <> (?i)(?=.*Plus) >> EP+7
+(?i)Go.for.Happiness.S02E00(?=.*HHWEB) => Go.for.Happiness.S00E07
+#快乐再出发3 观众站专属
+(?i)Go.for.Happiness.S03(?=.*Plus)(?=.*ADWeb) => Go.for.Happiness.S00 && S00 <> (?i)(?=.*Plus) >> EP+26
+(?i)Go.for.Happiness.S03(?=.*Plus)(?=.*ADWeb) => Go.for.Happiness.S00 && S00 <> (?i)(?=.*Plus) >> EP+26
+(?i)快要出发啦.Ready.to.Go.S03(?=.*ADWeb) => 快乐再出发.Go.for.Happiness.S00 && S00 <> (?i)(?=.*ADWeb) >> EP+22
+#五哈5 观众资源 加更版
+(?i)加更.Ha.Ha.Ha.Ha.Ha.S05(?=.*Plus)(?=.*ADWeb) => Ha.Ha.Ha.Ha.Ha.S00 && S00 <> (?i)(?=.*Plus) >> EP+51
+#种地吧3 观众资源 加更版
+(?i)Become.a.Farmer.S03(?=.*Plus)(?=.*ADWeb) => 种地吧.Become.a.Farmer.S00 && S00 <> (?i)(?=.*Plus) >> EP+65
+#种地吧3 馒头4K&1080p
+(?i)Become.a.Farmer.S03E(5|10|15|20|25|30|35|40|45|50|55|60)(?=.*MWeb) => 种地吧.2023.S00E\1 && S00 <> (?i:1080p|2160p|4K) >> EP/5+65
+(?i)Become.a.Farmer.S03E(5[6-9])(?=.*MWeb) => 种地吧.2023.S03E\1 && S03 <> (?i:1080p|2160p|4K) >> EP-11
+(?i)Become.a.Farmer.S03E(5[1-4])(?=.*MWeb) => 种地吧.2023.S03E\1 && S03 <> (?i:1080p|2160p|4K) >> EP-10
+(?i)Become.a.Farmer.S03E(4[6-9])(?=.*MWeb) => 种地吧.2023.S03E\1 && S03 <> (?i:1080p|2160p|4K) >> EP-9
+(?i)Become.a.Farmer.S03E(4[1-4])(?=.*MWeb) => 种地吧.2023.S03E\1 && S03 <> (?i:1080p|2160p|4K) >> EP-8
+(?i)Become.a.Farmer.S03E(3[6-9])(?=.*MWeb) => 种地吧.2023.S03E\1 && S03 <> (?i:1080p|2160p|4K) >> EP-7
+(?i)Become.a.Farmer.S03E(3[1-4])(?=.*MWeb) => 种地吧.2023.S03E\1 && S03 <> (?i:1080p|2160p|4K) >> EP-6
+(?i)Become.a.Farmer.S03E(2[6-9])(?=.*MWeb) => 种地吧.2023.S03E\1 && S03 <> (?i:1080p|2160p|4K) >> EP-5
+(?i)Become.a.Farmer.S03E(2[1-4])(?=.*MWeb) => 种地吧.2023.S03E\1 && S03 <> (?i:1080p|2160p|4K) >> EP-4
+(?i)Become.a.Farmer.S03E(1[6-9])(?=.*MWeb) => 种地吧.2023.S03E\1 && S03 <> (?i:1080p|2160p|4K) >> EP-3
+(?i)Become.a.Farmer.S03E(1[1-4])(?=.*MWeb) => 种地吧.2023.S03E\1 && S03 <> (?i:1080p|2160p|4K) >> EP-2
+(?i)Become.a.Farmer.S03E(0[6-9])(?=.*MWeb) => 种地吧.2023.S03E\1 && S03 <> (?i:1080p|2160p|4K) >> EP-1
+ 
+ 
+#################剧集#################
+#胶囊计划 英雄
+胶囊计划 英雄 => 胶囊计划S03{[tmdbid=211134;type=tv,s=3]}
+#86版西游记
+Journey.to.the.West.1986 => {[tmdbid=13923-journey-to-the-west;type=tv]}
+#太太太厉害
+M.Mission. => 太太太厉害{[tmdbid=246657;type=tv]}
+#扬声
+Yang.Voice.2024 => 扬声{[tmdbid=261958;type=tv]}
+#大秦帝国之纵横
+大秦帝国之纵横 => 大秦帝国之纵横{[tmdbid=243530;type=tv]}
+#大秦帝国之崛起方法   
+大秦帝国之崛起 => 大秦帝国之崛起{[tmdbid=243233;type=tv]}
+誓言无声 => 誓言无声{[tmdbid=92472;type=tv]}
+家有儿女初长成 => 家有儿女初长成{[tmdbid=97043;type=tv]
+#人间世 (2016)
+Life.Matters.II.2019 => 人间世  (2016) {[tmdbid=68056;type=tv;s=2]}
+Moral.Peanuts.2 => Moral.Peanu
+nds.FrieS07 => 老友记  (1994) {[tmdbid=1668;type=tv;s=7]}
+The Ferry Man 2015 S02 => 灵魂摆渡.Soul.Ferry.2015.S02
+##越狱
+越狱特别篇：最后一越.Prison.Break.2009 => 越狱 S00
+Prison.Break.The.Final.Break.2009 => 越狱特别篇：最后一越{[tmdbid=176241;type=movie]}
+#金猪玉叶
+Take.Me.Home.2024 => 金猪玉叶 (2024) {[tmdbid=256018;type=tv]}
+#星际之门
+星际之门：SG-1 (1997) => Stargate SG-1 {[tmdbid=4629;type=tv]}
+#我叫白小飞
+I.Am.Bai.Xiaofei.S01.2024 => 我叫白小飞{[tmdbid=247389;type=tv]}
+#猎冰
+The.Hunter.S01(?=.*(?:2024)) => 猎冰 (2024) {[tmdbid=233958;type=tv;s=1]}
+#天龙八部
+Heaven.Dragon.the.Eighth.Episode.2003 => 天龙八部 (2003) {[tmdbid=31959;type=tv;s=1]}
+#大王别慌张
+My Dear ，King Theatre => 大王别慌张
+#超异能族
+Moving.S01 => 超异能族 S01
+#仙剑奇侠传三
+仙剑奇侠传三.Chinese.Paladin.3.S03 => 仙剑奇侠传三.Chinese.Paladin.3.S01
+#婚后事
+Happily.Ever.After.2024 => 婚后事 (2024){[tmdbid=246713;type=tv]}
+#南来北往
+Always.on.the.Move => 南来北往
+#黑镜
+#智能时代
+Zhi Neng SDai S01 2023 => 智能时代  第一季
+#蜘蛛夫人：超感觉醒
+Madame.Web => 蜘蛛夫人：超感觉醒
+#三体（2024）
+3.Body.Problem.2024 => 三体.2024
+#请回答1988
+Reply 1988 => 请回答1988
+#天机算
+Tin.Gei.Suen.2007 => 天机算{[tmdbid=3125;type=tv]}
+#超意神探
+Suspect.2024 => 超意神探
+#青云志
+Noble.Aspirations => 青云志 (2016){[tmdbid=67814;type=tv]}
+#武神主宰
+Dominator of Martial Gods => 武神主宰{[tmdbid=228707;type=tv]}
+#诡探前传
+Psycho.Detective.2.2019 => 诡探前传
+#诡探
+Psycho.Detective.2017 => 诡探
+#神探夏洛克
+Sherlock(?![\s.]Holmes) => 神探夏洛克
+#背着善宰跑
+背着善在跑吧 => 背着善宰跑 {[tmdbid=230923;type=tv]}
+#十品官吴山羊
+十品官吴山羊.P => 十品官吴山羊.E
+#庆余年
+Joy.of.Life.Special.Edition.2024.S01 => 庆余年 S00
+Qing.Yu.Nian.2019 => 庆余年 S01{[tmdbid=95842;type=tv]}
+#有兽焉 【ADweb】
+Fabulous Beasts S01(?=.*E(2[5-9]|3[0-4]).*ADWeb) => Fabulous Beasts S03 && S03 <> 2023 >> EP-24
+#神雕侠侣 14版 【mp4ba】
+神雕侠侣.未删减版(?=.*Ep[0-9][0-9]).(?=.*(?:Mp4Ba)) => 神雕侠侣 (2014)
+#末代厨娘
+The.Last.Cook.2024.S01 => 末代厨娘
+#星汉灿烂
+Love Like The Galaxy => 星汉灿烂
+Like The Galaxy => 星汉灿烂
+#超级工程
+China'S Mega Projects => 超级工程
+China'S Mega Projects3 China Revealed => 超级工程 {[tmdbid=70815;type=tv;s=3]}
+China's.Mega.Projects3.China.Revealed.2017.S03  => 超级工程 {[tmdbid=70815;type=tv;s=3]}
+# 【domp4】
+m瑰d故s => 玫瑰的故事
+d王b慌z => 大王别慌张
+c风t浪 => 乘风踏浪
+q余n => 庆余年
+t朝g事l之x行 =>  唐朝诡事录之西行 {[tmdbid=211089;type=tv;s=2]}
+z神z凡c神y => 斩神之凡尘神域
+x巷r家 => 小巷人家
+y夜x河 => 永夜星河
+s锦r家 => 蜀锦人家
+w是x警 => 我是刑警
+#唐朝诡事录之西行
+唐朝诡事录之西行 =>  唐朝诡事录之西行 {[tmdbid=211089;type=tv;s=2]}
+\[唐朝诡事录之西行\].Strange.Tales.of.Tang.Dynasty.II.To.the.West(?=.*QHstudIo) => 唐朝诡事录
+#法证先锋6 【ADweb】-TMDB识别为S01
+Forensic Heroes S06 => Forensic Heroes 6 S01
+法证先锋.Forensic.Heroes.S06 => Forensic Heroes 6 S01
+#洛基第二季 【FLUX|Ntb】
+(?<=Loki.S02E\d{2}.*?).*2160p(?=.*(?:NTb|FLUX)) => .2160p
+(?<=Loki.S02E\d{2}.*?).*1080p(?=.*(?:NTb|FLUX)) => .1080p
+#凡人修仙传 【ADweb】
+凡人修仙传.燕家堡之战.Mortal.Cultivation.Biography.SP01 => 凡人修仙传 S01 && S01 <> 2021 >> EP+17
+凡人修仙传.魔道争锋.Mortal.Cultivation.Biography.S02 => 凡人修仙传 S01 && S01 <> 2021 >> EP+21
+凡人修仙传.再别天南.Mortal.Cultivation.Biography.S03 => 凡人修仙传 S01 && S01 <> 2022 >> EP+46
+凡人修仙传.初入星海.Mortal.Cultivation.Biography.S04 => 凡人修仙传 S01 && S01 <> 2022 >> EP+60
+#云岗
+云岗 => 云岗 (2022) {[tmdbid=273826;type=tv]}
+#老郭有新番
+Lao.Guo.You.Xin.Fan.2021.S01E <> .PartB >> 2*EP
+#天启：第一次世界大战
+Apocalypse.World.War.1.Part. => 天启：第一次世界大战.s01e0
+#紧急审讯室SP
+Emergency Interrogation Room SP => 紧急审讯室 (2014) [tmdbid=65322;type=tv;s=00]
+#Re：从零开始的异世界生活 
+Re：从零开始的异世界生活 袭击篇=>Re：从零开始的异世界生活 S03
+[Tt]he.[Ll]ong.[Ss]eason => 漫长的季节
+[Ff]ive-[Ss]tar.Hotel => 五星大饭店
+Buam-dong Avengers => 付岩洞复仇者们
+\[风中奇缘\] => 风中奇缘
+Desert.Sea => 沙海
+#笑傲江湖（2001）
+The.The.Legendary.Swordsman.2001. => {[tmdbid=tt1392724;type=tv;s=01;]} && The.The.Legendary.Swordsman.2001. <> .2160p.WEB-DL.H264.AAC-HDPTWeb >> 0（EP）
+#我的团长我的团
+My chief My Regiment 2009 E01 WEB-DL 4K H265 AAC-CHDWEB => {[tmdbid=tt1479138;type=tv;s=01;]} && My chief My Regiment 2009  <>  WEB-DL 4K H265 AAC-CHDWEB >> 0（EP）
+#那年那兔那些事儿
+[SkyWalks][那年那兔那些事儿][Year Hare Affair][01][简体][1080P]  => {[doubanid=26328492;type=tv;s=01;]} && [SkyWalks][那年那兔那些事儿][Year Hare Affair][ <> ][简体][1080P] >> 0（EP）
+[SkyWalks][那年那兔那些事儿 第二季][Year Hare Affair 2][01][简体][1080P] => {[doubanid=26647032;type=tv;s=02;]} && [SkyWalks][那年那兔那些事儿 第二季][Year Hare Affair 2][ <> ][简体][1080P] >> 0（EP）
+[SkyWalks][那年那兔那些事儿 第三季][Year Hare Affair 3][01][简体][1080P] => {[doubanid=26842687;type=tv;s=03;]} && [SkyWalks][那年那兔那些事儿 第三季][Year Hare Affair 3][ <> ][简体][1080P] >> 0（EP）
+[GM-Team][国漫][那年那兔那些事儿 第五季][Year Hare Affair 5][01][初心涌动][AVC][GB][1080P] => {[doubanid=34845506;type=tv;s=05;]} && [GM-Team][国漫][那年那兔那些事儿 第五季][Year Hare Affair 5][ <> ][初心涌动][AVC][GB][1080P] >> 0（EP）
+[SkyWalks][那年那兔那些事儿 番外篇][Year Hare Affair Extra][01][简体][1080P] => {[doubanid=26877495;type=tv;s=00;]} && [SkyWalks][那年那兔那些事儿 番外篇][Year Hare Affair Extra][c <> ][简体][1080P] >> 0（EP）
+#你回来了（2020）
+Welcome.Home.S01E01.2020.1080p.VIU.WEB-DL.H264.AAC-HHWEB=> {[tmdbid=tt11968312;type=tv;s=01;]} && Welcome.Home.S01 <> ..2020.1080p.VIU.WEB-DL.H264.AAC-HHWEB >> 0（EP）
+#猫和老鼠
+猫和老鼠.Tom.and.Jerry.S01E41.1965.720p.WEB-DL.H.264.AAC.2.0-FROGWeb => {[doubanid=4321270;type=tv;s=01;]} && 猫和老鼠.Tom.and.Jerry.S01 <> .1965.720p.WEB-DL.H.264.AAC.2.0-FROGWeb >> 0（EP）
+新版猫和老鼠.The.New.Tom.&.Jerry.Show.S01E01.1975.720p.WEB-DL.H.264.AAC.2.0-FROGWeb => {[tmdbid=tt0130417;type=tv;s=01;]} && 新版猫和老鼠.The.New.Tom.&.Jerry.Show.S01 <> .1975.720p.WEB-DL.H.264.AAC.2.0-FROGWeb >> 0（EP）
+#西游记
+西游记.(1-25).Journey.to.the.West.1986.1080p .WEB-DL.x265.10bit.MNHD-FRDS => {[tmdbid=tt1163129;type=tv;s=01;]}
+#水浒传
+水浒传.Tales.of.the.Marshes.(1-43).1998.1080p.WEB-DL.HEVC.MNHD-FRDS => {[tmdbid=tt1388431;type=tv;s=01;]}
+#红楼梦
+【4K修复】红楼梦.A.Dream.in.Red.Mansions.1987.2160p.WEB-DL.H264.AAC-HDPTWeb => {[tmdbid=tt1162595;type=tv;s=01;]}
+#岁月
+[岁月]Sui.Yue.2007.S01E23.DVDRip.X265.10Bit.AC3-Auska => {[tmdbid=tt6318218;type=tv;s=01;]} && [岁月]Sui.Yue.2007.S01 <> .DVDRip.X265.10Bit.AC3-Auska >> 0（EP）
+#天行九歌
+天行九歌.Tian.Xing.Jiu.Ge.2016.E90.1080p.WEB-DL.AAC.H264-OurTV => {[tmdbid=tt11841100;type=tv;s=01;]} && 天行九歌.Tian.Xing.Jiu.Ge.2016. <> .1080p.WEB-DL.AAC.H264-OurTV >> 0（EP）
+#黑白森林
+HEI.BAI.SEN.LIN. => 黑白森林{[tmdbid=270859;type=tv]}
+ 
+#################电影#################
+#美国内战
+Civil.War => 美国内战 (2024) {[tmdbid=929590;type=movie]}
+# 穿过月亮的旅行.I.
+穿过月亮的旅行\.I => \.I
+#权力的游戏：征服与反抗
+Game.of.Thrones.Conquest.and.Rebellion.2017 => 权力的游戏：征服与反抗{[tmdbid=492606;type=movie]}
+#权力的游戏：生命中的一天
+Game of Thrones: A Day in the Life.2015 => 权力的游戏：生命中的一天{[tmdbid=340200;type=movie]}
+#偷天换日
+Italian.Job.2003 => 偷天换日 (2003) {[tmdbid=9654;type=movie]}
+#回应我 (2023)
+Talk to Me 2022 => 回应我 (2023) {[tmdbid=1008042];type=movie]}
+#短信情缘 (2023)
+Love Again 2023 => 短信情缘 (2023) {[tmdbid=758336];type=movie]}
+#飞越疯人院 (1975)
+One Flew Over the Cuckoo‘s Nest 1975 => 飞越疯人院 (1975) [imdbid=tt0073488]
+#拿破仑 (2023) 【MTweb】
+NaPoLun 2160p => 拿破仑 (2023) [imdbid=tt13287846]
+#暴裂无声 (2017)
+Wrath.of.Slience.2017 => 暴裂无声 (2017) {[tmdbid=473328;type=movie]}
+#纳尼亚传奇：狮子、女巫和魔衣橱(2005)
+The.Chronicles.of.Narnia.The.Lion.the.Witch.and.the.Wardrobe=> {[tmdbid=411;type=movie]}
+#剑来
+Sword.of.Coming =>剑来 
+Princess.Pearl.II.1999. => 还珠格格.S02
+Vneom.Let.There.Be.Camage => 毒液2
+ 
+# 黄石
+Yellowstone.Season1E => Yellowstone.S01E
+Yellowstone.Season2E => Yellowstone.S02E
+Yellowstone.Season3E => Yellowstone.S03E
+Yellowstone.Season4E => Yellowstone.S04E
+z帘y幕 => 珠帘玉幕
+h团y => 好团圆
+y夜x河 => 永夜星河
+s潜 => 深潜
+x巷r家 => 小巷人家
+b夜p晓.EP => 白夜追凶.S02EP
+h运j => 好运家
+d罗d陆z燃h战 => 斗罗大陆之燃魂战
+w是x警 => 我是刑警
+y未y => 夜未央
+z世j中x遇j你 => 在世界中心遇见你
+j重z => 九重紫
+s锦r家 => 蜀锦人家
+t餮j => 饕餮记
+q明s河t密m => 清明上河图密码
+猎z图j.EP => 猎罪图鉴.S01EP
+l罪t鉴2.EP => 猎罪图鉴.S02EP
+FAIRY TAIL - 100 YEARS QUEST - => 妖精的尾巴 百年任务.S01E
+c烂d风h海 => 灿烂的风和海
+d至 => 冬至
+w将x欢g诉l风 => 我将喜欢告诉了风
+b芯m月s倾c => 冰芯明月夙倾城
+d奉d更r => 大奉打更人
+y伞y雨 => 一伞烟雨
+q朵t花y世k => 千朵桃花一世开
+z心y雄 => 真心英雄
+b跑b，y生 => 奔跑吧，医生
+b月f星 => 白月梵星
+g色f华 => 国色芳华
+c云s => 朝云散
+z站 => 驻站
+l不q的c萱x => 了不起的曹萱萱
+s红y => 锁红颜
+j囊m录 => 锦囊妙录
+p白 => 漂白
+x思l => 相思令
+w所w惧z永b放q.EP => 无所畏惧.S02EP
+w福l门 => 五福临门
+b色g榄s => 白色橄榄树
+l姊m => 六姊妹
+x灵m雾 => 心灵迷雾
+x台y树 => 仙台有树
+s叉j2.EP => 三叉戟.S02EP
+y烬z上 => 余烬之上
+z心 => 掌心
+Running.Man => {[tmdbid=33238;type=tv;s=1]} Running Man
+When.Life.Gives.You.Tangerines => 苦尽柑来遇见你
+Jade.Dynasty => 诛仙{[tmdbid=206484;type=tv]}
