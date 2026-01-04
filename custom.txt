@@ -1,5 +1,7 @@
 # 青春猪头少年不会梦到娇怜外出妹
+青春猪头少年不会梦到娇怜外出妹 => {[tmdbid=1056803;type=tv]}
 ^(青春猪头少年不会梦到娇怜外出妹|青春豬頭少年不會夢到嬌憐外出妹|青春ブタ野郎はおでかけ少女の夢を見ない|Seishun\.Buta\.Yarou\.wa\.Odekake\.Shoujo\.no\.Yume\.wo\.Minai|Rascal\.Does\.Not\.Dream\.of\.a\.Runaway\.Girl|Rascal Does Not Dream of a Runaway Girl)$ => 青春猪头少年不会梦到娇怜外出妹
 
-# 孤岛学院
-^(孤岛学院|孤島學院|孤島学園|Kotou\.Gakuen|Kotou Gakuen|Isolated\.Island\.Academy|Isolated Island Academy)$ => 孤岛学院
+# 学园孤岛
+学园孤岛 => {[tmdbid=63495;type=tv]}
+^(学园孤岛|學園孤島|がっえんこどう|Gakuen Kodou|School-Live!|School Live!)$ => 学园孤岛
