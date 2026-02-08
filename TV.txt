@@ -333,7 +333,7 @@ Welcome.Home.S01E01.2020.1080p.VIU.WEB-DL.H264.AAC-HHWEB=> {[tmdbid=tt11968312;t
 天行九歌.Tian.Xing.Jiu.Ge.2016.E90.1080p.WEB-DL.AAC.H264-OurTV => {[tmdbid=tt11841100;type=tv;s=01;]} && 天行九歌.Tian.Xing.Jiu.Ge.2016. <> .1080p.WEB-DL.AAC.H264-OurTV >> 0（EP）
 #黑白森林
 HEI.BAI.SEN.LIN. => 黑白森林{[tmdbid=270859;type=tv]}
-
+The.Girl.with.the.Dragon.Tattoo.2011 => The Girl with the Dragon Tattoo
 #################电影#################
 #美国内战
 Civil.War => 美国内战 (2024) {[tmdbid=929590;type=movie]}
@@ -419,3 +419,9 @@ Jade.Dynasty => 诛仙{[tmdbid=206484;type=tv]}
 小猪佩奇第二季.Peppa.Pig.Season.2 => 小猪佩奇第二季.Peppa.Pig.Season.02
 Apotheosis.S03E <> .2025 >> EP+104
 Apotheosis.S03 => Apotheosis.S01{[tmdbid=213791;type=tv;s=01]}
+
+#葬送的芙莉莲 第二季
+Sousou no Frieren S02(?=.*ADWeb) => Sousou no Frieren S01 && S01 <> 2026 >> EP+28
+
+#我推的孩子 第三季
+Oshi no Ko S03(?=.*ADWeb) => Oshi no Ko S01 && S01 <> 2026 >> EP+24
